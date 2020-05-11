@@ -1,5 +1,4 @@
 channels:
   - conda-forge
-  - defaults
 dependencies:
   - pyupgrade=1.26.0
