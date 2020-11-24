@@ -4,7 +4,7 @@ pyupgrade(-conda) mirror
 Mirror of pyupgrade for pre-commit with conda as a language.
 
 * For pre-commit: see https://github.com/pre-commit/pre-commit
-* For black: see https://github.com/asottile/pyupgrade
+* For pyupgrade: see https://github.com/asottile/pyupgrade
 
 ### Using pyupgrade with pre-commit and conda:
 
