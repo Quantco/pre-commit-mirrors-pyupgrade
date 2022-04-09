@@ -26,7 +26,7 @@ jobs:
         id: versions
         run: |
           echo "::set-output name=new-version::123"
-          exit 0
+          if false; then
           pkgname="$(yq '.dependencies[0]' environment.yml | grep -Eio '[a-z0-9_-]+' | head -n 1)"
           old_version=$(micromamba list -n check-env "$pkgname" --json | jq -r '.[0].version')
           micromamba update -y -n check-env -a
@@ -35,6 +35,7 @@ jobs:
             sed -i "s/$old_version/$new_version/g" environment.yml
             echo "::set-output name=pkgname::$pkgname"
             echo "::set-output name=new-version::$new_version"
+          fi
           fi
       - uses: peter-evans/create-pull-request@0dfc93c1049996241252d9dc45a270b7c12dec6b
         if: steps.versions.outputs.pkgname
