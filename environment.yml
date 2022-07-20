@@ -1,4 +1,4 @@
 channels:
   - conda-forge
 dependencies:
-  - pyupgrade=2.37.1
+  - pyupgrade=2.37.2
