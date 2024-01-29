@@ -1,6 +1,6 @@
 - id: pyupgrade-conda
   name: pyupgrade-conda
+  description: 'Automatically upgrade syntax for newer versions.'
   entry: pyupgrade
   language: conda
-  description: Automatically upgrade syntax for newer versions.
-  'types': [python]
+  types: [python]
