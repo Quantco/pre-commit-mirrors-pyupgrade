@@ -1,6 +1,6 @@
-# pyupgrade mirror
+# pyupgrade pre-commit hook
 
-Mirror of pyupgrade for pre-commit with conda as a language.
+pre-commit hook of pyupgrade with conda as a `language` / package manager.
 
 For pre-commit: see [here](https://github.com/pre-commit/pre-commit)
 
